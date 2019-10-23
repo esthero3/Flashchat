@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 
 class ChatViewController: UIViewController {
     
@@ -108,6 +108,7 @@ class ChatViewController: UIViewController {
         
         //TODO: Log out the user and send them back to WelcomeViewController
         
+        Auth.auth().signOut()
         
     }
     
